@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node node_modules/vite/bin/vite.js build",
     "build-local": "vite build && node copy-to-backend.cjs && npx cap copy",
     "lint": "eslint .",
     "preview": "vite preview"
